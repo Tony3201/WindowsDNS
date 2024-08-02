@@ -1,0 +1,14 @@
+cmd -administrator
+
+① Automatic
+REG add "HKLM\SYSTEM\CurrentControlSet\services\dnscache" /v Start /t REG_DWORD /d 2 /f
+
+② Manual
+REG add "HKLM\SYSTEM\CurrentControlSet\services\dnscache" /v Start /t REG_DWORD /d 3 /f
+
+③ Disable
+REG add "HKLM\SYSTEM\CurrentControlSet\services\dnscache" /v Start /t REG_DWORD /d 4 /f
+
+ 
+
+#These are the specific steps for enabling or disabling the DNS Client service on a Windows system. Once the DNS Client service is set to automatic, you can enjoy the MetroVPN service seamlessly! 
